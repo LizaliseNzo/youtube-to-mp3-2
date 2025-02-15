@@ -1,0 +1,6 @@
+Initial Express.js project setup
+
+- Configure basic Express.js application structure
+- Add EJS view templating
+- Set up static file serving for CSS
+- Include basic project configuration files 
