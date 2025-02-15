@@ -34,7 +34,7 @@ app.post("/convert-mp3", async(req, res) => {
         if(videoID === undefined || videoID === "" || videoID === null) {
             return res.render("index", {
                 success: false,
-                error_message: "Please enter a valid YouTube URL"
+                error_message: "Please enter a valid YouTube Video ID"
             });
         }
         
@@ -78,7 +78,7 @@ app.post("/convert-mp3", async(req, res) => {
         } else {
             return res.render("index", {
                 success: false,
-                error_message: "Failed to convert video. Please check the URL and try again."
+                error_message: "Failed to convert video. Please check the ID and try again."
             });
         }
     } catch (error) {
